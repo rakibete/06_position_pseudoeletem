@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position</title>
+    <style>
+        .box{
+            position: relative;
+        }
+        .ring{
+            top: -75px;
+            z-index: 5;
+        }
+        .water{
+            top: -180px;
+        }
+        .boy{
+            z-index: 10;
+        }
+    
+    </style>
 </head>
 <h3>There are five Position</h3>
+<ul>
+    <li>Static</li>
+    <li>relative</li>
+    <li>absolute</li>
+    <li>fixed</li>
+    <li>sticky</li>
+</ul>
+
 <body>
-    <ul>
-        <li>Static</li>
-        <li>relative</li>
-        <li>absolute</li>
-        <li>fixed</li>
-        <li>sticky</li>
-    </ul>
+    <div class="position-container"><img src="/swim/boy.svg" alt="" class="box boy"></div>
+    <div class="position-container"><img src="/swim/ring.svg" alt="" class="box ring"></div>
+    <div class="position-container"><img src="/swim/water.svg" alt="" class="box water"></div>
 </body>
+
 </html>
